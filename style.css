@@ -1,0 +1,122 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5f7f8f;
+  background-image: radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+/* =========================
+   LOGIN CARD
+========================= */
+.login-container {
+  width: 380px;
+  background: #f4f4f4;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  padding: 40px 30px 70px;
+}
+
+/* Top right dark corner */
+.login-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 60px;
+  background: #1c1c1c;
+  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+  border-top-right-radius: 6px;
+}
+
+/* Bottom left dark corner */
+.login-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 60px;
+  background: #1c1c1c;
+  clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
+  border-bottom-left-radius: 6px;
+}
+
+/* =========================
+   TITLE
+========================= */
+.login-container h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+/* =========================
+   INPUTS
+========================= */
+.input-wrapper {
+  margin-bottom: 25px;
+}
+
+.input-wrapper label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: #333;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.input-wrapper input:focus {
+  border-color: #6fa3c9;
+  box-shadow: 0 0 5px rgba(111,163,201,0.6);
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  padding: 12px 35px;
+  background: linear-gradient(to bottom, #7fb1d4, #4e87ad);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #4e87ad, #3a6f93);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.97);
+}

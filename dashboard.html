@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio | Personal Portfolio</title>
+  <link rel="stylesheet" href="style2.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+
+  <a href="index.html" class="back-btn">← Back to Login</a>
+
+
+  <header class="navbar">
+    <div class="logo">Paolo Guinto About Me Page</div>
+    <nav>
+      <a href="#">Top</a>
+      <a href="#">Scan</a>
+      <a href="#">Refresh</a>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>About Me</h1>
+      <p>
+        Ever since I began studying Information Technology, I have carried a clear dream in my heart: to become a web developer. The journey has not been easy. There were moments when lessons felt overwhelming, when coding errors seemed endless, and when self-doubt quietly questioned whether I was capable. Studying IT requires patience, persistence, and the courage to face constant challenges—but those hardships have only strengthened my determination.
+
+I have learned that behind every successful website is not just clean code, but resilience. Late nights debugging, struggling to understand complex programming concepts, and balancing responsibilities have shaped me into someone who refuses to give up. Each obstacle has become a lesson. Each failure has become motivation to improve.
+
+Becoming a web developer is more than just a career goal for me. It is a dream of creating digital spaces where ideas come to life—websites that inform, inspire, and connect people around the world. I want to build platforms that solve real problems and make everyday tasks easier. I want my skills to reflect not only technical knowledge but also creativity and dedication.
+
+Despite the hardships in studying Information Technology, I remain focused on my goal. Every challenge I overcome brings me one step closer to becoming the web developer I aspire to be. My journey may be difficult, but my dream is stronger than any obstacle I face.
+
+    </div>
+    <div class="hero-image">
+      <img src=34eeae7d-1e7e-4759-b42e-2d7cb92d3e26.jpeg alt="Portfolio Image">
+    </div>
+  </section>
+
+
+  <div class="container">
+
+
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('contact')">Contact</a>
+      <a onclick="showPage('about')">About</a>
+      <a onclick="showPage('help')">Help</a>
+      <a onclick="exitSystem()">Exit</a>
+    </div>
+
+    <div class="content">
+
+      <div id="home" class="page">
+        <h2>Person Information</h2>
+        <input id="fname" placeholder="First Name">
+        <input id="mname" placeholder="Middle Name">
+        <input id="lname" placeholder="Last Name">
+        <input id="age" type="number" placeholder="Age">
+        <input id="gmail" placeholder="Email">
+        <button id="saveBtn">Save 🔒</button>
+      </div>
+
+
+      <div id="contact" class="page hidden">
+        <h2>Contact</h2>
+        <p>facebook: https://www.facebook.com/paolo.guintu.7 </p>
+        <p>email address: paologuintu15@gmail.com</p>
+      </div>
+
+
+      <div id="about" class="page hidden">
+        <h2>About</h2>
+        <p>Improving my programming skills through continuous coding practice.
+</p>
+      </div>
+
+
+      <div id="help" class="page hidden">
+        <h2>Help</h2>
+        <p>Complete the form and press “Save” — the entered information will automatically be displayed in the table.</p>
+      </div>
+    </div>
+
+
+    <div class="table-area">
+      <h2>Persons Data</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>FIRST NAME</th>
+            <th>MIDDLE NAME</th>
+            <th>LAST NAME</th>
+            <th>AGE</th>
+            <th>EMAIL</th>
+          </tr>
+        </thead>
+        <tbody id="tableData"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
